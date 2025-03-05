@@ -72,7 +72,7 @@ export default function ProjectOnboarding({
   }
 
   // Load what we need for onboarding
-  // NOTE: This whole component is staticly rendered Once
+  // NOTE: This whole component is statically rendered Once
   const hasClaudeMd = existsSync(join(workspaceDir, 'KODING.md'))
   const isWorkspaceDirEmpty = isDirEmpty(workspaceDir)
   const needsClaudeMd = !hasClaudeMd && !isWorkspaceDirEmpty
